@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <div class="header-content">
+
+            <div>
+                <p class="eyebrow">GAME COLLECTION</p>
+
+                <h1>GameVault</h1>
+
+                <p class="subtitle">
+                    Manage your favorite games in one place.
+                </p>
+            </div>
+
+            <button class="add-button" onclick="showAddForm()">+ Add Game
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <div>
+                <p class="section-label">YOUR LIBRARY</p>
+                <h2>All Games</h2>
+                <p class="section-description">Browse, view, edit, and manage your game collection.</p>
+            </div>
+
+            <button class="refresh-button" onclick="loadGames()">
+                Refresh
+            </button>
+        </section>
+        <section id="results">
+            <p class="loading"> Loading games... </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>GameVault &copy; 2026</p>
+        <p>Powered by Flask & SQLite</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
